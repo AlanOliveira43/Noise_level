@@ -8,3 +8,6 @@ int HTTP_Post(const char* url, const char* payload) {
     // Simula sucesso na operação.
     return 0;
 }
+if (nivelSonoro >= LIMIAR_VERMELHO) {
+    HTTP_Post("http://sistema-industrial.com/alerta", "Alerta! Ruído crítico detectado!");
+}
