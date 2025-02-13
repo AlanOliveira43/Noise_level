@@ -41,6 +41,8 @@ add_executable(Noise_level
     src/leds.c
     src/botoes.c
     src/temporizador.c
+    src/lcd.c
+    src/wifi.c
 )
 
 # Nome e versão do programa

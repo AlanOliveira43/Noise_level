@@ -18,7 +18,6 @@
  #include "../inc/wifi.h"            // Funções para configuração e conexão Wi-Fi
  #include "../inc/http_client.h"     // Funções para envio de requisições HTTP
  #include "../inc/temporizador.h"    // Funções para controle de temporizadores
- #include "../inc/delay.h"           // Função de delay (pode ser implementada conforme a plataforma)
  
  // Protótipos das funções de integração com a interface e comunicação
  extern float lerNivelSonoro(void);           // Lê e converte o sinal do microfone

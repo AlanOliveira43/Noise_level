@@ -1,22 +1,17 @@
-#include "lcd.h"
-#include "leds.h"
+#ifndef LCD_H
+#define LCD_H
+
 #include <stdio.h>
 
-#define LIMIAR_NORMAL 50.0   // Valor de referência para o nível de ruído
-#define LIMIAR_ALERTA  70.0
+// Definição das cores
+#define LCD_LED_GREEN 0
+#define LCD_LED_YELLOW 1
+#define LCD_LED_RED 2
 
-void atualizarInterface(float nivelSonoro) {
-    char mensagem[32];
-    sprintf(mensagem, "Ruido: %.1f", nivelSonoro);
-    LCD_Clear();
-    LCD_Print(mensagem);
+// Declaração das funções do LCD
+void LCD_Clear();
+void LCD_Print(const char* mensagem);
+void LED_SetColor(int cor);
+void atualizarInterface(float nivelSonoro);
 
-    // Controle dos LEDs baseado no nível sonoro
-    if (nivelSonoro < LIMIAR_NORMAL) {
-        LED_SetColor(GREEN);   // Ruído aceitável
-    } else if (nivelSonoro < LIMIAR_ALERTA) {
-        LED_SetColor(YELLOW);  // Ruído próximo ao limite
-    } else {
-        LED_SetColor(RED);     // Ruído acima do limite
-    }
-}
+#endif // LCD_H
