@@ -1,4 +1,4 @@
-#include "leds.h"
+#include "../inc/leds.h"
 #include <stdio.h>
 
 // Em uma implementação real, as funções abaixo configurariam os pinos.

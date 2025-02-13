@@ -1,4 +1,4 @@
-#include "calibracao.h"
+#include "../inc/calibracao.h"
 #include "config.h"
 
 float converterADCparaNivel(unsigned int adc_value) {

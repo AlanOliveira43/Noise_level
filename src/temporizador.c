@@ -1,4 +1,4 @@
-#include "temporizador.h"
+#include "../inc/temporizador.h"
 #include <time.h>
 #include <unistd.h>  // usleep
 #include <stdio.h>

@@ -1,4 +1,4 @@
-#include "botoes.h"
+#include "../inc/botoes.h"
 #include <stdio.h>
 
 // Nesta implementação de exemplo, não há leitura real dos botões.

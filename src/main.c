@@ -9,17 +9,16 @@
  */
 
  #include <stdio.h>
- #include "config.h"          // Definições gerais e constantes (ex.: pinos, limiares, SSID, senha, etc.)
- #include "adc.h"             // Funções para inicialização e leitura do ADC
- #include "calibracao.h"      // Funções para converter o valor ADC em nível sonoro
- #include "lcd.h"             // Funções para controle do display LCD
- #include "leds.h"            // Funções para controle dos LEDs (ou LED RGB)
- #include "joystick.h"        // Funções para leitura do joystick
- #include "botoes.h"         // Funções para leitura dos botões
- #include "wifi.h"            // Funções para configuração e conexão Wi-Fi
- #include "http_client.h"     // Funções para envio de requisições HTTP
- #include "temporizador.h"    // Funções para controle de temporizadores
- #include "delay.h"           // Função de delay (pode ser implementada conforme a plataforma)
+ #include "../inc/config.h"          // Definições gerais e constantes (ex.: pinos, limiares, SSID, senha, etc.)
+ #include "../inc/calibracao.h"      // Funções para converter o valor ADC em nível sonoro
+ #include "../inc/lcd.h"             // Funções para controle do display LCD
+ #include "../inc/leds.h"            // Funções para controle dos LEDs (ou LED RGB)
+ #include "../inc/joystick.h"        // Funções para leitura do joystick
+ #include "../inc/botoes.h"         // Funções para leitura dos botões
+ #include "../inc/wifi.h"            // Funções para configuração e conexão Wi-Fi
+ #include "../inc/http_client.h"     // Funções para envio de requisições HTTP
+ #include "../inc/temporizador.h"    // Funções para controle de temporizadores
+ #include "../inc/delay.h"           // Função de delay (pode ser implementada conforme a plataforma)
  
  // Protótipos das funções de integração com a interface e comunicação
  extern float lerNivelSonoro(void);           // Lê e converte o sinal do microfone
