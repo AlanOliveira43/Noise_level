@@ -1,7 +1,7 @@
-#ifndef LEDS_H
-#define LEDS_H
+#ifndef NOISE_LEVEL_LEDS_H
+#define NOISE_LEVEL_LEDS_H
 
-#include <stdio.h> // Para simulação via console, remova se não for necessário.
+#include <stdio.h>  // Se necessário para declarações (pode ser removido se não for preciso)
 
 // Enumeração para cores dos LEDs.
 typedef enum {
@@ -22,4 +22,4 @@ void LED_Init(void);
  */
 void LED_SetColor(LED_Color color);
 
-#endif // LEDS_H
+#endif // NOISE_LEVEL_LEDS_H

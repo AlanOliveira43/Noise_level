@@ -1,11 +1,8 @@
-#include "../inc/leds.h"
-#include <stdio.h>
-
-// Em uma implementação real, as funções abaixo configurariam os pinos.
-// Aqui, usamos printf para simulação.
+#include "../inc/leds.h"  // Utilize o caminho correto conforme a estrutura do projeto
+#include <stdio.h> // Necessário para usar printf
 
 void LED_Init(void) {
-    // Inicialização dos LEDs.
+    // Inicialização dos LEDs (simulação ou implementação real)
     printf("[LED] Inicializados.\n");
 }
 

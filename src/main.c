@@ -71,15 +71,15 @@
  
          // 5. Pequena espera para evitar loop excessivamente rápido (pode ser ajustada conforme a necessidade)
          delay_ms(100);
+
+         if (nivelSonoro < LIMIAR_VERDE) {
+            LCD_Print("Ruido OK (Verde)");
+        } else if (nivelSonoro < LIMIAR_AMARELO) {
+            LCD_Print("Atenção! Use proteção.");
+        } else {
+            LCD_Print("Perigo! Ruído excessivo!");
+        }
      }
-     if (nivelSonoro < LIMIAR_VERDE) {
-        LCD_Print("Ruido OK (Verde)");
-    } else if (nivelSonoro < LIMIAR_AMARELO) {
-        LCD_Print("Atenção! Use proteção.");
-    } else {
-        LCD_Print("Perigo! Ruído excessivo!");
-    }
-    
  
      return 0; // Nunca alcançado
  }
