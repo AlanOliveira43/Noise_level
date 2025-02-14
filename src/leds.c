@@ -10,22 +10,18 @@ void LED_Init(void) {
 }
 
 void LED_SetColor(LED_Color color) {
-    // Em um sistema real, você acionaria os pinos correspondentes.
-    // Neste exemplo, apenas exibimos o status via console.
     switch (color) {
-        case LED_OFF:
-            printf("[LED] Desligado.\n");
-            break;
         case LED_GREEN:
-            printf("[LED] Cor: VERDE.\n");
+            printf("[LED] Verde ativado\n");
             break;
         case LED_YELLOW:
-            printf("[LED] Cor: AMARELO.\n");
+            printf("[LED] Amarelo ativado\n");
             break;
         case LED_RED:
-            printf("[LED] Cor: VERMELHO.\n");
+            printf("[LED] Vermelho ativado\n");
             break;
         default:
+            printf("[LED] Cor inválida\n");
             break;
     }
 }

@@ -1,6 +1,8 @@
 #ifndef LEDS_H
 #define LEDS_H
 
+#include <stdio.h> // Para simulação via console, remova se não for necessário.
+
 // Enumeração para cores dos LEDs.
 typedef enum {
     LED_OFF,

@@ -4,8 +4,8 @@
 // Enumeração para identificar os botões.
 typedef enum {
     BOTAO_NONE = 0,
-    BOTAO_1,
-    BOTAO_2
+    BOTAO_ONE,
+    BOTAO_TWO
 } Botao;
 
 /**
